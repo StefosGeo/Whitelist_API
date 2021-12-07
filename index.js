@@ -55,6 +55,7 @@ app.get('/whitelisted', (req, res)=>{
     res.send(members)
 })
 
+
 app.get('/whitelisted/member/:address', (req, res, value) => {
     let sent = false;
     let rawdata = fs.readFileSync('whitelisted.json');
